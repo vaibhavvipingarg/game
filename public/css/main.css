@@ -6,7 +6,7 @@
     margin: auto auto;
     position: relative;
     overflow: hidden;
-    background-image: url("background.jpg");
+    background-image: url("../images/background.jpg");
 }
 .row.ltor{
     height: 120px;
@@ -37,7 +37,7 @@
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eaeaea', endColorstr='#707070',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 .egg.broken{
-    background-image: url("broken_egg.png");
+    background-image: url("../images/broken_egg.png");
 }
 
 .eggTray {
@@ -45,7 +45,7 @@
     width: 64px;
     height: 64px;
     position: relative;
-    background-image: url("tray_big.png");
+    background-image: url("../images/tray_big.png");
     /* Chrome, Safari, Opera */
     -webkit-animation-name: ltor;
     -webkit-animation-duration: 5s;
@@ -63,7 +63,7 @@
 }
 
 .eggTray.reverse {
-    background-image: url("tray_big.png");
+    background-image: url("../images/tray_big.png");
     /* Chrome, Safari, Opera */
     -webkit-animation-name: rtol;
     /* Standard syntax */
@@ -73,7 +73,7 @@
 }
 
 .eggTray.reverse.slow {
-    background-image: url("tray_big.png");
+    background-image: url("../images/tray_big.png");
     /* Chrome, Safari, Opera */
     -webkit-animation-duration: 8s;
     -webkit-animation-name: ltorSlow;
