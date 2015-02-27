@@ -1,0 +1,143 @@
+.sceneContainer{
+    height: 700px;
+    max-height: 700px;
+    width: 500px;
+    border: 1px solid #6e6e6e;
+    margin: auto auto;
+    position: relative;
+    overflow: hidden;
+    background-image: url("background.jpg");
+}
+.row.ltor{
+    height: 120px;
+    width: 500px;
+    position: absolute;
+}
+.row.rtol{
+    height: 120px;
+    width: 500px;
+    position: absolute;
+}
+.egg{
+    border-radius: 600%;
+    background-color: #AAA;
+    position:absolute;
+    left:50%;
+    z-index:2;
+    display:none;
+
+    /*------------- GRADIENT GENERATED FROM http://www.colorzilla.com/gradient-editor/ ----------------------- */
+    background: rgb(234,234,234); /* Old browsers */
+    background: -moz-linear-gradient(-45deg, rgba(234,234,234,1) 1%, rgba(112,112,112,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(1%,rgba(234,234,234,1)), color-stop(100%,rgba(112,112,112,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(-45deg, rgba(234,234,234,1) 1%,rgba(112,112,112,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(-45deg, rgba(234,234,234,1) 1%,rgba(112,112,112,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(-45deg, rgba(234,234,234,1) 1%,rgba(112,112,112,1) 100%); /* IE10+ */
+    background: linear-gradient(135deg, rgba(234,234,234,1) 1%,rgba(112,112,112,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eaeaea', endColorstr='#707070',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+.egg.broken{
+    background-image: url("broken_egg.png");
+}
+
+.eggTray {
+    top:50px;
+    width: 64px;
+    height: 64px;
+    position: relative;
+    background-image: url("tray_big.png");
+    /* Chrome, Safari, Opera */
+    -webkit-animation-name: ltor;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: 1s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-play-state: running;
+    /* Standard syntax */
+    animation-name: myfirst;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+
+.eggTray.reverse {
+    background-image: url("tray_big.png");
+    /* Chrome, Safari, Opera */
+    -webkit-animation-name: rtol;
+    /* Standard syntax */
+    animation-name: rtol;
+    left: 450px;
+
+}
+
+.eggTray.reverse.slow {
+    background-image: url("tray_big.png");
+    /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 8s;
+    -webkit-animation-name: ltorSlow;
+    /* Standard syntax */
+    animation-name: ltorSlow;
+    animation-duration: 8s;
+    left: 436px;
+
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes ltor {
+    0%   {left:0px; top:50px;}
+    50%  {left:436px; top:50px;}
+    100% {left:0px; top:50px;}
+}
+
+/* Standard syntax */
+@keyframes ltor {
+    0%   {left:0px; top:50px;}
+    50%  {left:436px; top:50px;}
+    100% {left:0px; top:50px;}
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes ltorSlow {
+    0%   {left:0px; top:50px;}
+    50%  {left:436px; top:50px;}
+    100% {left:0px; top:50px;}
+}
+
+/* Standard syntax */
+@keyframes ltorSlow {
+    0%   {left:0px; top:50px;}
+    50%  {left:436px; top:50px;}
+    100% {left:0px; top:50px;}
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes rtol {
+    0%   {left:436px; top:50px;}
+    50%  {left:0px; top:50px;}
+    100% {left:436px; top:50px;}
+}
+
+/* Standard syntax */
+@keyframes rtol {
+    0%   {left:436px; top:50px;}
+    50%  {left:0px; top:50px;}
+    100% {left:436px; top:50px;}
+}
+.score{
+    display: inline-block;
+    font-weight: bolder;
+    font-size: 16pt;
+    color: darkgreen;
+    font-family: fantasy;
+}
+
+.lives{
+    isplay: inline-block;
+    font-weight: bolder;
+    font-size: 16pt;
+    color: darkgreen;
+    font-family: fantasy;
+    float: right;
+}
