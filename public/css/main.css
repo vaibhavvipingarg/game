@@ -1,12 +1,32 @@
-.sceneContainer{
-    height: 700px;
-    max-height: 700px;
-    width: 500px;
-    border: 1px solid #6e6e6e;
-    margin: auto auto;
+body{
+    zoom: 60%;
+}
+.gameContainer{
+      width: 995px;
+  background-image: url("../images/tab.jpg");
+  margin: auto;
+  height: 1000px;
+}
+
+.scoreHeader{
+    display: block;
+    width: 480px;
+    height: 40px;
+    margin: auto;
+    top: 111px;
     position: relative;
-    overflow: hidden;
-    background-image: url("../images/background.jpg");
+    z-index: 2;
+    background-image: url("../images/bg.jpg");
+}
+
+.sceneContainer{
+   height: 700px;
+  width: 480px;
+  border: 1px solid #6e6e6e;
+  margin: 100px auto;
+  position: relative;
+  overflow: hidden;
+  background-image: url("../images/bg.jpg");
 }
 .row.ltor{
     height: 120px;
@@ -129,7 +149,7 @@
     display: inline-block;
     font-weight: bolder;
     font-size: 16pt;
-    color: darkgreen;
+    color: #111;
     font-family: fantasy;
 }
 
@@ -137,7 +157,7 @@
     isplay: inline-block;
     font-weight: bolder;
     font-size: 16pt;
-    color: darkgreen;
+    color: #111;
     font-family: fantasy;
     float: right;
 }
