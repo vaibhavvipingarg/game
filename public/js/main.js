@@ -46,7 +46,7 @@ $( document ).ready(function() {
                     var right = left + 50;
                     var top = $('#' + trayName).offset().top;
 
-                    if (checkPointx > left && checkPointx < right && checkPointy <= top+25 && checkPointy >= top - 10) {
+                    if (checkPointx > left && checkPointx < right && checkPointy <= (top-100)+25 && checkPointy >= (top-100) - 10) {
                         level++;
                         $('.score').html('Score: ' + level);
                         $('.egg').stop();
@@ -84,7 +84,7 @@ $( document ).ready(function() {
         launchPosition = 20;
         if(!$('.egg').parent().is($('.sceneContainer'))) {
             bbleft = $('#tray' + (level -1)).position().left + 25;
-            launchPosition = $('.sceneContainer').height() - ($('#tray' + (level -1)).offset().top);
+            launchPosition = $('.sceneContainer').height() - ($('#tray' + (level -1)).offset().top -100);
             $('.sceneContainer').append($('.egg'));
             $('.egg').css({'width':ballsize, 'height':ballsize,'display':'block', 'position': 'absolute', 'left': bbleft, 'top': '', 'bottom': launchPosition + 22 });
             //launchPosition = $('.egg').position().top;
